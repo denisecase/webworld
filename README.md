@@ -36,6 +36,10 @@ gradle build
 gradle wrapper
 ./gradlew build
 ./gradlew build deployHeroku
+
+git add .
+git commit -m "unique message here"
+git push origin main
 ```
 
 ## Deploy free with Heroku
