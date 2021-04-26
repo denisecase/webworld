@@ -112,10 +112,11 @@ Java is a compiled language.
 - We can execute a Java jar file by telling it the default class. 
 - After editing source code, many artifacts are created. 
 - We don't need all these generated artifacts in our project repo. 
-- Anything we don't want to store in our central cloud repo, we add to a file named:
+- Folders and files not needed in our repo, are added to a file named:
   - [.gitignore](./.gitignore)
-- Java source files are kept in [src/main/java](./src/main/java)
-- Addl code and other files are kept in [src/main/resources](./src/main/resources)
+- Java source files are in [src/main/java](./src/main/java)
+- Addl code and other files are in [src/main/resources](./src/main/resources)
+- This follows conventions for [organizing Java projects](https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html). 
 
 ## Files for Gradle
 
