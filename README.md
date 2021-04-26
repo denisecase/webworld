@@ -29,14 +29,33 @@ refreshenv
 - Java 11
 - Dependency: Spring Web 
 
+## Create a Favicon
+
+Web apps should have a favicon to show in the browser tab.
+
+- [favicon.io](https://favicon.io/favicon-generator/)
+- Text: WW
+- Font/Background Colors: #FFFFFF #006949
+- Background: Circle
+- Font Family: Chewy
+- Font Size: 60
+
+Download and extract to src\main\resources\static.
+
+
 ## Commands (on Windows)
 
+Create the local gradle wrapper and use it to build.
+
 ```Powershell
-gradle build
 gradle wrapper
 ./gradlew build
-./gradlew build deployHeroku
+```
 
+After changes. Heroku app / deploy is configured to deploy on a push to GitHub.
+
+```Powershell
+./gradlew build
 git add .
 git commit -m "unique message here"
 git push origin main
